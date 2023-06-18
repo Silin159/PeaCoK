@@ -5,4 +5,4 @@ This is the repository for paper [PeaCoK: Persona Commonsense Knowledge for Cons
 
 #### Our experiments contain two parts:
 - Persona Knowledge Generalization (Section 6), please see: ``knwoledge_generation/README.md``
-- Downstream Persona-Grounded Dialogue Generation (Section 7), please see: ``dialogue_generation/README.md``
+- Downstream Persona-Grounded Dialogue Modeling (Section 7), please see: ``dialogue_generation/README.md``

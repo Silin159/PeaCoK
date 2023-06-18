@@ -3,4 +3,6 @@ This is the repository for paper [PeaCoK: Persona Commonsense Knowledge for Cons
 
 #### Our proposed persona-grounded commonsense knowledge graph (PeaCoK) in the paper is released [here](https://drive.google.com/file/d/1pl-Z0qap9dyyQYv7u8ET9qC5H6V3BUG9/view?usp=sharing).
 
-#### Source code related to the paper will be released soon.
+#### Our experiments contain two parts:
+    1. Persona Knowledge Generalization (Section 6), please see: ``knwoledge_generation/README.md``
+    2. Downstream Persona-Grounded Dialogue Generation (Section 7), please see: ``dialogue_generation/README.md``

@@ -13,7 +13,9 @@ The `baseline` directory contains code modified from the [alexa-with-dstc9-track
 
 ## Requirements
 
-To Do.
+```
+pip install -r requirements.txt
+```
 
 ## Model Training
 

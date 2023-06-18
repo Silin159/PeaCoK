@@ -1,0 +1,24 @@
+{
+  "dataset_args": {
+    "max_utterances": 20,
+    "max_tokens": 512
+  },
+
+  "task": "linking",
+  "model_name_or_path": "microsoft/deberta-v3-large",
+
+  "per_gpu_train_batch_size": 2,
+  "per_gpu_eval_batch_size": 2,
+  "gradient_accumulation_steps": 1,
+  
+  "learning_rate": 2e-7,
+  "adam_epsilon": 1e-8,
+  "max_grad_norm": 1.0,
+
+  "num_train_epochs": 20,
+  "warmup_steps": 0,
+
+  "fp16": "",
+
+  "seed": 47
+}

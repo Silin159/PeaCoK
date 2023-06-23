@@ -63,3 +63,16 @@ python eval_hits.py
 
 For PPL evaluation, we follow [P^2Bot repository](https://github.com/SivilTaram/Persona-Dialogue-Generation) to run `train_psquare.py` on a trained model to fake the continuation of training.
 The restoring will first validate and report PPL on the validation dataset.
+
+## Model Checkpoints
+
+We provide our trained model checkpoints and evaluation samples [here](https://drive.google.com/file/d/1e-PXv-w7ODUA_xuIUBsaqw0mjxuWOLGt/view?usp=sharing).
+
+Please upzip the file to get the `checkpoint` folder:
+- `checkpoint/original/` includes models trained on the original ConvAI2 PersonaChat profiles.
+- `checkpoint/revised/` includes models trained on the revised ConvAI2 PersonaChat profiles.
+
+Under `checkpoint/original/` or `checkpoint/revised/`:
+- `p2bot`: our reproduced P2Bot baseline model
+- `p2bot_atomic`: P2Bot model augmented with (Comet-)Atomic2020 knowledge
+- `p2bot_peacok`: P2Bot model augmented with PeaCoK persona knowledge

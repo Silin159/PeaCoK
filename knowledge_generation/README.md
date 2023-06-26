@@ -43,9 +43,10 @@ Entrypoint for training DeBERTa discriminator (you will find the main training s
 bash deberta_training.sh
 ```
 
-Knowledge generation with baseline models:
+## Model Inference
 
 To Do.
 
 ## Automatic Evaluation
+
 To Do.

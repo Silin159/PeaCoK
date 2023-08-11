@@ -45,12 +45,12 @@ bash deberta_training.sh
 
 ## Model Inference
 
-To Do.
+To Do: Scripts for persona knowledge generation with Comet-BART and GPT-3/3.5 (+ re-ranking by DeBERTa discriminator).
 
 ## Automatic Evaluation
 
-To Do.
+To Do: Automatic evaluation scripts for persona knowledge generation.
 
 ## Model Checkpoints
 
-To Do.
+To Do: Google Drive links to our model checkpoints.

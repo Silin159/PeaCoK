@@ -1,5 +1,6 @@
 import os
 import json
+import jsonlines
 import random
 from tqdm import tqdm
 
@@ -145,4 +146,29 @@ for data_type in ['train', 'val', 'test']:
     with open(os.path.join(path, f'fake_data_{data_type}.json'), 'w') as f:
         json.dump(fake_data[data_type], f)
 
+# save unique head and relation pairs for COMETBART generation in jsonl format
+for data_type in ['test']:
+    path = "data_persona_gen"
+    data_file = os.path.join(path, 'neural_kg_data_{}.json'.format(data_type))
 
+    with open(data_file, mode='r', encoding='utf-8') as f:
+        input_tuples = json.load(f)
+        f.close()
+
+    input_queries = []
+    kg_dict_list = []
+    for str_instance in input_tuples:
+        str_list = str_instance.split('\t')
+        head = str_list[0]
+        rel = str_list[1]
+        head_rel_key = "{}\t{}".format(head, rel)
+        if head_rel_key not in input_queries:
+            input_queries.append(head_rel_key)
+            kg_dict_list.append({"head": head, "relation": rel, "tails": []})
+    input_queries.sort()
+
+    with open(os.path.join(path, 'neural_kg_data_{}_unique.jsonl'.format(data_type)), mode='w', encoding='utf-8') as f:
+        writer = jsonlines.Writer(f)
+        writer.write_all(kg_dict_list)
+    writer.close()
+    f.close()

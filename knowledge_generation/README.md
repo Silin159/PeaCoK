@@ -35,7 +35,7 @@ nlg-eval --setup
 
 ### Datasets
 
-Our preprocessed PeaCoK data for persona knowledge generalization experiments can be downloaded from [this link1](https://drive.google.com/file/d/19oapPUb5T-GqcZ0oOpzTTrnzDWyLlB3f/view?usp=sharing) and the ready-generated attributes [from this link2](https://drive.google.com/file/d/1KdRWZ5YYeev78nRMxMNaEg3QlHDxK5XA/view?usp=sharing), please place `data_persona_gen.zip` and `generated_tails.zip` under this directory and unzip the files. You can also download through the commandline with the following commands: 
+Our preprocessed PeaCoK data for persona knowledge generalization experiments can be downloaded from [this link1](https://drive.google.com/file/d/1iVODYzLWtWZNV_wDXxDiRSHZglcjGnV3/view?usp=sharing) and the ready-generated attributes [from this link2](https://drive.google.com/file/d/15ybkMlet2ZsjRUxMJyxECSSr2cg_Pdff/view?usp=sharing), please place `data_persona_gen.zip` and `generated_tails.zip` under this directory and unzip the files. You can also download through the commandline with the following commands: 
 
 ```shell
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=19oapPUb5T-GqcZ0oOpzTTrnzDWyLlB3f' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=19oapPUb5T-GqcZ0oOpzTTrnzDWyLlB3f" -O data_persona_gen.zip && rm -rf /tmp/cookies.txt
@@ -54,7 +54,7 @@ rm -rf generated_tails/
 
 ### Model Checkpoints
 
-If you would like to run the model inference part without training models, you need to download our checkpoints for Comet-BART and DeBERTa from [this link](https://drive.google.com/file/d/1NaK2jA9LciEA4mtyAmhTBTXrzBRc3Y5p/view?usp=sharing). Please place `model_checkpoints.zip` under this directory and unzip the file. You can also download through the commandline with: 
+If you would like to run the model inference part without training models, you need to download our checkpoints for Comet-BART and DeBERTa from [this link](https://drive.google.com/file/d/1AWP9fHlD0aNzxhvGFWp_9wvrnBusJRRc/view?usp=sharing). Please place `model_checkpoints.zip` under this directory and unzip the file. You can also download through the commandline with: 
 
 ```shell
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1NaK2jA9LciEA4mtyAmhTBTXrzBRc3Y5p' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1NaK2jA9LciEA4mtyAmhTBTXrzBRc3Y5p" -O model_checkpoints.zip && rm -rf /tmp/cookies.txt

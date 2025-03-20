@@ -18,12 +18,12 @@ Please follow the **Install Dependencies** in [P^2Bot repository](https://github
 ## Knowledge Linking
 
 Following the [ComFact](https://github.com/Silin159/ComFact) benchmark, we train a DeBERTa (large) **entity** linker to retrieve PeaCoK facts that are relevant to each [PersonaChat](https://arxiv.org/abs/1801.07243) dialogues.
-Our developed DeBERTa **entity** linker trained on ComFact data can be downloaded from [this link](https://drive.google.com/file/d/1GHa3N7AbHLQSnhIsywmRLn003mN5NLTo/view?usp=sharing).
-Our preprocessed [ConvAI2 PersonaChat](https://arxiv.org/pdf/1902.00098v1.pdf) dataset with linked relevant PeaCoK facts can be downloaded from [this link](https://drive.google.com/file/d/158NluWqUSVMEUUjKh1CxuG5IKAK8VO9r/view?usp=sharing).
+Our developed DeBERTa **entity** linker trained on ComFact data can be downloaded from [this link](https://drive.google.com/file/d/1FC0PgdL_e3hBcg0m_uxR5WaNiwXNM2EL/view?usp=sharing).
+Our preprocessed [ConvAI2 PersonaChat](https://arxiv.org/pdf/1902.00098v1.pdf) dataset with linked relevant PeaCoK facts can be downloaded from [this link](https://drive.google.com/file/d/1uHWYb6NWcnuFQ_fAY9uOtG5WDnlUzgTv/view?usp=sharing).
 
 ## Model Training
 
-Our final preprocessed data for P^2Bot dialogue model training can be downloaded from [this link](https://drive.google.com/file/d/1kdE5aW9o2Lz58CaD2uLnTuKdzsLcxwPQ/view?usp=sharing), please place `data_peacok_p2bot_convai2.zip` under this directory and unzip the file.
+Our final preprocessed data for P^2Bot dialogue model training can be downloaded from [this link](https://drive.google.com/file/d/1Wn0d5svyNlbskXurxaEiDHEp2jivzr7W/view?usp=sharing), please place `data_peacok_p2bot_convai2.zip` under this directory and unzip the file.
 The P^2Bot dialogue model needs three-step training, where we use different training data augmented by PeaCoK, see `data/README.md` in the unzipped file for more details.
 
 ### Step 1: Transmitter Training
@@ -66,7 +66,7 @@ The restoring will first validate and report PPL on the validation dataset.
 
 ## Model Checkpoints
 
-We provide our trained model checkpoints and evaluation samples [here](https://drive.google.com/file/d/1e-PXv-w7ODUA_xuIUBsaqw0mjxuWOLGt/view?usp=sharing).
+We provide our trained model checkpoints and evaluation samples [here](https://drive.google.com/file/d/1ENNRUeMrsi64BuOZUI_YhKCLD-LSqKFp/view?usp=sharing).
 
 Please upzip the file to get the `checkpoint` folder:
 - `checkpoint/original/` includes models trained on the original ConvAI2 PersonaChat profiles.

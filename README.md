@@ -16,7 +16,7 @@
 
 </div>
 
-This is the repository for paper [PeaCoK: Persona Commonsense Knowledge for Consistent and Engaging Narratives](https://arxiv.org/abs/2305.02364).
+This is the official repository for paper PeaCoK: Persona Commonsense Knowledge for Consistent and Engaging Narratives.
 
 #### Our proposed persona-grounded commonsense knowledge graph (PeaCoK) in the paper is also released [here](https://drive.google.com/file/d/1ZXH-vNmS-UWdEgp6DA4WtP_2HwwWFeMb/view?usp=sharing).
 
